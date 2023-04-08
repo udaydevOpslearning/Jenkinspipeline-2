@@ -19,19 +19,19 @@ pipeline {
             steps {
                 dir ("uday")
                 script {
-                    <git checkout.git checkout>
+                    git-checkout.git-checkout("boxfuse-sample-java-war-hello" "master")
                 }
             }
         }
 
-        stage('create tag on gitrepo') {
+       /* stage('create tag on gitrepo') {
             steps {
                 dir ("uday")
                 script {
-                    <tag creation.tagcreation>
+                    tag-creation.tag-creation ("${tag}")}
                 }
             }
-        }
+        }*/
     }
 }
 
