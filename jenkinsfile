@@ -17,9 +17,9 @@ pipeline {
 
         stage('checkout code from git') {
             steps {
-    
+              dir("uday") {
                 script {
-                    git-checkout.git-checkout("boxfuse-sample-java-war-hello", "master")
+                    git-checkout.git-checkout("boxfuse-sample-java-war-hello", "master") }
                 }
             }
         }
