@@ -1,0 +1,37 @@
+@Library('mylibrary')
+pipeline {
+    agent any 
+    tools {
+        maven 'Maven'
+    }
+
+    stages {
+
+        stage('Hello world') {
+            steps {
+                script {
+                    hello.hello()
+                }
+            }
+        }
+
+        stage('checkout code from git') {
+            steps {
+                dir ("uday")
+                script {
+                    <git checkout.git checkout>
+                }
+            }
+        }
+
+        stage('create tag on gitrepo') {
+            steps {
+                dir ("uday")
+                script {
+                    <tag creation.tagcreation>
+                }
+            }
+        }
+    }
+}
+
