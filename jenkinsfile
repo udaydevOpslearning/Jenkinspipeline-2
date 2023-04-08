@@ -1,4 +1,4 @@
-@Library('mylibrary')
+@Library('mylibrary') _
 pipeline {
     agent any 
     tools {
