@@ -15,11 +15,11 @@ pipeline {
             }
         }
 
-        stage('checkout code from git') {
+        stage('checkout code from git') { 
             steps {
               
                 script {
-                    git-checkout.git-checkout("boxfuse-sample-java-war-hello", "master") }
+                    git_checkout.git_checkout("boxfuse-sample-java-war-hello", "master") }
                 
             }
         }
