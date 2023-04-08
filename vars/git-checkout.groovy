@@ -1,6 +1,6 @@
 def git-checkout(String repo, String branch) {
     echo "This is for git checkout."
-    git credentialsid: 'jenkins' url: "git@github.com:udaydevOpslearning/${repo}.git", branch: "${branch}"
+    git credentialsid: 'uday' url: "git@github.com:udaydevOpslearning/${repo}.git", branch: "${branch}"
 }
 
 return this
