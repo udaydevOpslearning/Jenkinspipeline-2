@@ -1,4 +1,4 @@
-def tag-creation(String tag) {
+def tag_creation(String tag) {
 
     sh """
     git log -1
