@@ -3,11 +3,7 @@ pipeline {
     agent any 
     tools {
         maven 'Maven'
-    }
-    parameters {
-  string defaultValue: ${tag}, name: 'Tag'
-}
-
+        
     stages {
 
         stage('Hello world') {

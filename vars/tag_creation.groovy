@@ -3,7 +3,7 @@ def tag_creation(String tag) {
 
     sh """
     sh.
-    git log -1
+   tag= git log -1
     git tag -a ${tag} -m "this tag create from jenkins"
     git push origin ${tag}
      """
